@@ -39,6 +39,7 @@ elif [[ "$1" == "--init" || "$1" == "-i" ]]; then
   echo "The repository has been cloned to the current directory."
   echo "The path to the repository has been added to the PATH environment variable."
 
+
 elif [[ "$1" == "--help" || "$1" == "-h" ]]; then
   echo "Available options:"
   echo "--date, -d: Displays today's date."
