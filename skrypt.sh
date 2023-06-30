@@ -17,3 +17,11 @@ if [[ "$1" == "--logs" ]]; then
     		echo "Date: $(date)" >> "$filename"
   	done
 fi
+
+if [[ "$1" == "--help" ]]; then
+  	echo "Available options:"
+  	echo "--date: Displays today's date."
+  	echo "--logs <number_files>: Creates the specified number of logx.txt files, containing the file name, script name and date."
+else
+  	echo "Unknown option. Use 'script.sh --help' to display available options."
+fi
