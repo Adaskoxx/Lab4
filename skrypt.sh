@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ "$1" == "--date" ]]; then
+if [[ "$1" == "--date" || "$1" == "-d" ]]; then
   echo "Today's date: $(date)"
 fi
 
-if [[ "$1" == "--logs" ]]; then
+if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
 	if [ -n "$2" ]; then
 		count="$2"
 	else
@@ -18,10 +18,10 @@ if [[ "$1" == "--logs" ]]; then
   	done
 fi
 
-if [[ "$1" == "--help" ]]; then
+if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   	echo "Available options:"
-  	echo "--date: Displays today's date."
-  	echo "--logs <number_files>: Creates the specified number of logx.txt files, containing the file name, script name and date."
+  	echo "--date, -d: Displays today's date."
+  	echo "--logs, -l <number_files>: Creates the specified number of logx.txt files, containing the file name, script name and date."
 else
   	echo "Unknown option. Use 'script.sh --help' to display available options."
 fi
