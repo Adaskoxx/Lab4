@@ -26,7 +26,7 @@ elif [[ "$1" == "--help"  "$1" == "-h" ]]; then
       echo "Available options:"
       echo "--date, -d: Displays today's date."
       echo "--logs, -l <number_files>: Creates the specified number of logx.txt files, containing the file name, script name and date."
-    echo "--init, -i: Clones the repository and adds the PATH environment variable."
+      echo "--init, -i: Clones the repository and adds the PATH environment variable."
 else
       echo "Unknown option. Use 'script.sh --help' to display available options."
 fi
